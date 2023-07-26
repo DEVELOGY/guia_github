@@ -171,9 +171,9 @@ Enviar los cambios al servidor Github.
 `Importante descargar cambios de la rama origin`
 
 ```console
-// descargar cambios de una rama
+# descargar cambios de una rama
 git pull
-// ó
+# ó
 git pull origin master
 ```
 > (master) es una variante de las ramas existentes en el desarrollo Pueden existir más de una, en un solo proyecto.
