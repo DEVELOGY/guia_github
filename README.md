@@ -136,20 +136,50 @@ Para ver la configuración que hemos hecho debería usar el comando:
 * ``style`` : _para cambios en la apariencia del código fuente, como el formato o la sintaxis._
 * ``test`` : _para cambios relacionados con pruebas o casos de prueba._
 
-#### Ejemplo
+Ejemplo:
 
-En este caso, se utiliza la etiqueta "feat" para indicar que se ha agregado una nueva funcionalidad. en este caso en la sección de "products", seguido del cambio especificado.
+El usuario “user01” esta haciendo cambios en el archivo1.txt
 
-> feat(products): Agregar función de búsqueda en barra de búsqueda
-> -This commit adds a new function to the search bar
-> -This will improve the overall user experience and make it easier to find relevant information.
+* Paso 1:
+Cuando este usuario termine de realizar la funcionalidad este deberá usar un etiqueta como “feat” y seguir lo siguientes pasos:
+```console
+git add archivo.txt
+```
+Agregar el “archivo.txt” a la preparación. para subir cambios
 
-Agregar una descripcion más detallada si es necesario desde el editor. Recuerda que configuraste el edito nano, para agregar una descripción mas detallada
 
-Este comando abrira el editor aqui podras redactar el commit
+* Paso 2:
+Este comando abrirá el editor configurado por nano, aquí podrás redactar el commit
 
 ```console
-    $ git commit 
+git commit
 ```
 
-Para guardar los cambios del editor nano, deberás usar `Ctrl + o` y `Ctrl + x` para salir del editor
+En este caso, se utiliza la etiqueta "feat" para indicar que se ha agregado una nueva funcionalidad. en este caso en la sección de "products", seguido del cambio especificado agregando las acciones realizadas como la siguiente nota.
+
+> feat(products): add search functions in the products module -This commit adds a new function to the search bar-This will improve the overall user experience and make it easier to find relevant information. Para guardar los cambios del editor nano, deberás usar Ctrl + o y Ctrl + x para salir del editor Agrega un commit mas corto se puede hacer de la siguiente manera: 
+
+```console
+git commit -m "fix(products): add search functions in the products module"
+```
+Agregar una descripcion más detallada si es necesario desde el editor. Recuerda que configuraste el edito nano, para agregar una descripción mas detallada.
+
+
+* Paso 3:
+Enviar los cambios al servidor Github.
+
+`Importante descargar cambios de la rama origin`
+
+```console
+// descargar cambios de una rama
+git pull
+// ó
+git pull origin master
+
+(master) es una variante de las ramas existentes en el desarrollo Pueden existir más de una, en un solo proyecto.
+
+Enviar los cambios 
+
+git push -u origin master
+```
+Si te salta algún error, es importante tomar medidas, que apliquen dependiendo el error.
