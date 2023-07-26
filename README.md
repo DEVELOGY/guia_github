@@ -175,11 +175,11 @@ Enviar los cambios al servidor Github.
 git pull
 // ó
 git pull origin master
+```
+> (master) es una variante de las ramas existentes en el desarrollo Pueden existir más de una, en un solo proyecto.
 
-(master) es una variante de las ramas existentes en el desarrollo Pueden existir más de una, en un solo proyecto.
-
-Enviar los cambios 
-
+__Enviar los cambios__
+```console
 git push -u origin master
 ```
 Si te salta algún error, es importante tomar medidas, que apliquen dependiendo el error.
